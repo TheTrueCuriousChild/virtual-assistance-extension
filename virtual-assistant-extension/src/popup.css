@@ -3,40 +3,101 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #000;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #000000; /* Black background */
-  color: #f5f5f5; /* Light text */
+  color: #ffa500;
 }
 
 .container {
-  padding: 1.5rem;
+  background-color: #000;
+  color: #ffa500;
+  padding: 16px;
   width: 300px;
-  text-align: center;
+  min-height: 360px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
-  font-size: 1.2rem;
-  color: #e67e22; /* Orange heading */
-  margin-bottom: 0.5rem;
-}
-
-p {
-  font-size: 0.9rem;
-  margin-bottom: 1.2rem;
-  color: #ccc;
+  margin-bottom: 16px;
+  font-size: 16px;
+  text-align: center;
 }
 
 button {
-  background-color: #e67e22; /* Orange button */
-  color: white;
+  background-color: #ffa500;
+  color: #000;
   border: none;
-  padding: 0.6rem 1.2rem;
+  padding: 10px 12px;
+  width: 100%;
   border-radius: 6px;
   font-weight: bold;
+  font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
 }
 
 button:hover {
-  background-color: #cf711f;
+  background-color: #ff8c00;
+}
+
+.notes-button {
+  background-color: #111;
+  color: #ffa500;
+  border: 1px solid #ffa500;
+  margin-top: 4px;
+}
+
+.notes-button:hover {
+  background-color: #222;
+}
+
+.caption {
+  font-size: 12px;
+  color: #ccc;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.mini-head {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #333;
+  margin: 12px 0;
+}
+
+.advanced-toggle {
+  cursor: pointer;
+  font-size: 13px;
+  color: #ffa500;
+  text-align: center;
+  margin-top: 4px;
+  text-decoration: underline;
+}
+
+.advanced-options {
+  margin-top: 10px;
+  font-size: 13px;
+  width: 100%;
+  color: #ffa500;
+}
+
+.advanced-options label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
 }
